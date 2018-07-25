@@ -1,0 +1,64 @@
+#itor{
+	position: relative;
+	width: 850px;
+	left:250px;
+	}
+#big{
+ 	position: relative;
+ 
+ 	height:0px;
+
+}
+
+#01{
+	position: relative;
+	bottom:200px;
+	left: 340px;
+
+	}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #2828FF; TEXT-DECORATION: underline
+}
+ul{
+	float: left;
+}
+.list_room{
+	position:relative;
+    left:300px;
+    bottom:230px;
+
+}
+.list_room list_room_tj_top{
+ left:270px;
+
+}
+.01{
+position: absolute;
+top:270px;
+
+}
+#third{
+position: absolute;
+top:540px;
+right:150px;
+border: 1px red solid;
+
+}
+#03{
+position: relative;
+	bottom:350px;
+	left: 440px;
+}
+
+.list_room01{
+	position:relative;
+    left:400px;
+    bottom:340px;
+
+}

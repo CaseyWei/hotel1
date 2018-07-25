@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>css实现鼠标悬停时图片加边框效果</title>
+<style type="text/css">
+
+
+img{background:white;margin:0 5px;width:"200"; height=:"200";}
+img:hover{border:1px red solid;}
+.dmo2{
+position: relative;
+width: 300px;
+border: 2px red solid; 
+}
+.demo2 img{border:1px solid transparent;}
+.demo2 img:hover{border:1px red solid;}
+.demo3 img:hover{width:200px;height:68px;border:1px solid yellow;}
+</style>
+</head>
+<body background="./image/r.jpg">
+<!--<div class="demo1">
+<table>
+<tr>
+	<td>
+<img src="images/picture01.jpg" />
+</td>
+<td><img src="images/picture02.jpg" /></td>
+<td><img src="images/picture03.jpg" /></td>
+<td><img src="images/picture04.jpg" /></td>
+</tr>
+<tr>
+<img src="images/picture01.jpg" />
+<img src="images/picture02.jpg" />
+<img src="images/picture03.jpg" />
+<img src="images/picture04.jpg" />
+</tr>
+</table>
+</div>
+
+--><div class="demo2">
+<table>
+<tr>
+<td><img src="images/picture01.jpg" /></td>
+<td><img src="images/picture02.jpg" /></td>
+<td><img src="images/picture03.jpg" /></td>
+<td><img src="images/picture04.jpg" /></td>
+</tr>
+<tr>
+<td><img src="images/picture01.jpg" /></td>
+<td><img src="images/picture02.jpg" /></td>
+<td><img src="images/picture03.jpg" /></td>
+<td><img src="images/picture04.jpg" /></td>
+</tr>
+</table>
+</div>
+<div class="demo3">
+<img src="/uploads/common/images/wall_s6.jpg" />
+<img src="/uploads/common/images/wall_s6.jpg" />
+<img src="/uploads/common/images/wall_s6.jpg" />
+<img src="/uploads/common/images/wall_s6.jpg" />
+<em>修改width和height,世界继续和平</em>
+</div>
+</body>
+</html>

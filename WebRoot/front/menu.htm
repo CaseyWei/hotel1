@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<LINK href="../Css/admin.css" type="text/css" rel="stylesheet">
+<SCRIPT language=javascript>
+	function expand(el)
+	{
+		childObj = document.getElementById("child" + el);
+
+		if (childObj.style.display == 'none')
+		{
+			childObj.style.display = 'block';
+		}
+		else
+		{
+			childObj.style.display = 'none';
+		}
+		return;
+	}
+</SCRIPT>
+</HEAD>
+<BODY>
+<TABLE height="100%" cellspacing="0" cellPadding="0" width="170" background="../image/l.jpg" border="0">
+  <TR>
+    <TD vAlign=top align="center">
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TR>
+          <TD height=10></TD>
+         </TR>
+       </TABLE>
+      <TABLE cellSpacing=0 cellPadding=0 width=150 border=0>
+      
+     <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background=../images/menu_bt.jpg><A 
+            class=menuParent 
+            href="../front/main.jsp" 
+            target=main>首页</A>
+          </TD>
+       </TR>
+        
+        <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background=../images/menu_bt.jpg><A 
+            class=menuParent onclick=expand(1) 
+            href="javascript:void(0);">关于我们</A>
+          </TD>
+       </TR>
+        <TR height=4>
+          <TD></TD>
+        </TR>
+       </TABLE>
+      <TABLE id="child1" style="DISPLAY: none" cellSpacing="0" cellPadding="0 "
+      width=150 border=0>
+        <TR height=20>
+          <TD align="center" width="30"><IMG height="9" src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../front/introduce.jsp" 
+            target=main>公司简介</A></TD></TR>
+        <TR height=20>
+          <TD align="center" width="30"><IMG height="9" src="../images/menu_icon.gif" width="9"></TD>
+          <TD><A class="menuChild" href="../front/jm.jsp"target=main>加入我们</A></TD>
+        </TR>
+        <TR height=20>
+          <TD align="center" width="30"><IMG height="9" src="../images/menu_icon.gif" width="9"></TD>
+          <TD><A class="menuChild" href="../KeFangmessageSvl" target=main>客房信息</A></TD>
+       </TR>
+        </table>
+      <TABLE cellSpacing=0 cellPadding=0 width=150 border=0>
+        
+        <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background=../images/menu_bt.jpg><A 
+            class=menuParent onclick=expand(7) 
+            href="javascript:void(0);">用户服务</A></TD></TR>
+        <TR height=4>
+          <TD></TD></TR></TABLE>
+    
+      <TABLE id=child7 style="DISPLAY: none" cellSpacing=0 cellPadding=0 
+      width=150 border=0>
+        <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../SayCheckLoginSvl" 
+            target=main>留言板</A></TD></TR>
+            
+             <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../showmessage.jsp" 
+            target=main>查看留言</A></TD></TR>
+            
+        <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../house/discount.html" 
+            target=main>优惠促销</A></TD></TR><!--
+          <TR height=20>
+          <TD align=middle width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../front/main.jsp" 
+            target=main>首页</A></TD></TR>
+                --><TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../CheckLoginSvl" 
+            target=main>用户订单</A></TD></TR>
+            <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../TuDanCheckLoginSvl" 
+            target=main>用户退单</A></TD></TR>
+            
+        <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild 
+            href="../UmodifyCheckLoginSvl" 
+            target=main>修改密码</A></TD></TR>
+        <TR height=4>
+          <TD colSpan=2></TD></TR></TABLE>
+          
+      <TABLE cellSpacing=0 cellPadding=0 width=150 border=0>
+        <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background=../images/menu_bt.jpg>
+          <A class=menuParent onclick=expand(0) href="javascript:void(0);">管理员信息</A></TD></TR>
+        <TR height=4>
+          <TD></TD></TR></TABLE>
+      <TABLE id=child0 style="DISPLAY: none" cellSpacing=0 cellPadding=0 
+      width=150 border=0>
+        <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD><A class=menuChild  href="../Manage/Login.jsp" target=main>管理员入口</A></TD>
+        </TR>
+        <TR height=20>
+          <TD align="center" width=30><IMG height=9 
+            src="../images/menu_icon.gif" width=9></TD>
+          <TD>
+          <A class="menuChild" onclick="if (confirm('确定要退出吗？')) return true; else return false;" 
+            href="http://www.hao123.com/?tn=82013038_96_hao_pg" 
+            target=_top>退出系统</A></TD></TR></TABLE>
+            
+         <table cellspacing="0" cellpadding="0" width="150" border="0">
+        <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background="../images/menu_bt.jpg">
+          <A class="menuParent"  href="../Login/denglu.jsp" target=main>用户登录</A>
+          </TD>
+        </TR>
+        <TR height=4>
+          <TD></TD>
+         </TR>
+        </table>
+
+           <TABLE cellSpacing=0 cellPadding=0 width=150 border=0>
+        <TR height=22>
+          <TD style="PADDING-LEFT: 30px" background=../images/menu_bt.jpg><A 
+            class=menuParent 
+            href="../regist/regist.jsp" target=main>注册 </A></TD></TR>
+        <TR height=4>
+          <TD></TD></TR></TABLE>
+            </TD>
+            
+          
+    <TD width=1 bgColor=#d1e6f7></TD>
+    </TR>
+    </TABLE>
+    </BODY>
+    </HTML>

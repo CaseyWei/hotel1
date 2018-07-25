@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	<filter>
+        <filter-name>Set Character Encoding</filter-name>
+        <filter-class>com.qy.hotel.filter.SetCharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>GBK</param-value>
+        </init-param>
+   </filter>   
+   <filter-mapping>
+        <filter-name>Set Character Encoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping><!--
+    
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>comentSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.comentSvl</servlet-class>
+  </servlet>-->
+  <!-- 酒店管理员查看所有订单 -->
+  <servlet>
+    <servlet-name>OrderSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.OrderSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OrderSvl</servlet-name>
+    <url-pattern>/OrderSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 管理员登录 -->
+  <servlet>
+    <servlet-name>AdminSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.AdminSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminSvl</servlet-name>
+    <url-pattern>/AdminSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 房间信息 -->
+  <servlet>
+    <servlet-name>roommessageSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.roommessageSvl</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>roommessageSvl</servlet-name>
+    <url-pattern>/roommessageSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 酒店房间信息 -->
+  <servlet>
+    <servlet-name>HouseMessageSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.HouseMessageSvl</servlet-class>
+  </servlet>
+   
+  <servlet-mapping>
+    <servlet-name>HouseMessageSvl</servlet-name>
+    <url-pattern>/HouseMessageSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UmodifySvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.UmodifySvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>UmodifySvl</servlet-name>
+    <url-pattern>/UmodifySvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>IsSamePwdSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.IsSamePwdSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>IsSamePwdSvl</servlet-name>
+    <url-pattern>/IsSamePwdSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>CheckLoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.CheckLoginSvl</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>CheckLoginSvl</servlet-name>
+    <url-pattern>/CheckLoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>TuDanCheckLoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.TuDanCheckLoginSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>TuDanCheckLoginSvl</servlet-name>
+    <url-pattern>/TuDanCheckLoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UmodifyCheckLoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.UmodifyCheckLoginSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UmodifyCheckLoginSvl</servlet-name>
+    <url-pattern>/UmodifyCheckLoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>SayCheckLoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.SayCheckLoginSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>SayCheckLoginSvl</servlet-name>
+    <url-pattern>/SayCheckLoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>LoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.LoginSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>LoginSvl</servlet-name>
+    <url-pattern>/LoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PersonUpdateSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.PersonUpdateSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>PersonUpdateSvl</servlet-name>
+    <url-pattern>/PersonUpdateSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>BackSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.BackSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>BackSvl</servlet-name>
+    <url-pattern>/BackSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>ModifyMima</servlet-name>
+    <servlet-class>com.qy.hotel.control.ModifyMima</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ModifyMima</servlet-name>
+    <url-pattern>/ModifyMima</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AModifyMima</servlet-name>
+    <servlet-class>com.qy.hotel.control.AModifyMima</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>AModifyMima</servlet-name>
+    <url-pattern>/AModifyMima</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HotelmessageSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.HotelmessageSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>HotelmessageSvl</servlet-name>
+    <url-pattern>/HotelmessageSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteHotelSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.DeleteHotelSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>DeleteHotelSvl</servlet-name>
+    <url-pattern>/DeleteHotelSvl</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>YDCheckLoginSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.YDCheckLoginSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>YDCheckLoginSvl</servlet-name>
+    <url-pattern>/YDCheckLoginSvl</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>KeFangmessageSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.KeFangmessageSvl</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>KeFangmessageSvl</servlet-name>
+    <url-pattern>/KeFangmessageSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 用户订房 -->
+  <servlet>
+    <servlet-name>UserReserveOrder</servlet-name>
+    <servlet-class>com.qy.hotel.control.UserReserveOrder</servlet-class>
+  </servlet>
+	<servlet-mapping>
+    <servlet-name>UserReserveOrder</servlet-name>
+    <url-pattern>/UserReserveOrder</url-pattern>
+  </servlet-mapping>
+  <!--申请表 -->
+  <servlet>
+    <servlet-name>ApplyMessageSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.ApplyMessageSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApplyMessageSvl</servlet-name>
+    <url-pattern>/ApplyMessageSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 管理员审核界面 -->
+    <servlet>
+    <servlet-name>ShenHeSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.ShenHeSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShenHeSvl</servlet-name>
+    <url-pattern>/ShenHeSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 审核申请加盟信息 -->
+    <servlet>
+    <servlet-name>ATongYiSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.ATongYiSvl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ATongYiSvl</servlet-name>
+    <url-pattern>/ATongYiSvl</url-pattern>
+  </servlet-mapping>
+  <!-- 注册检查 -->
+    <servlet>
+    <servlet-name>CheckRegistSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.CheckRegistSvl</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AJuJueSvl</servlet-name>
+    <servlet-class>com.qy.hotel.control.AJuJueSvl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>CheckRegistSvl</servlet-name>
+    <url-pattern>/CheckRegistSvl</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AJuJueSvl</servlet-name>
+    <url-pattern>/AJuJueSvl</url-pattern>
+  </servlet-mapping>
+
+
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="branch"
+  id="myeclipse.1401926614718"
+  context-root="/branch"
+  j2ee-spec="5.0"
+  archive="branch.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

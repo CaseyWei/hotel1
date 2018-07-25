@@ -1,0 +1,97 @@
+#itor{
+	position: relative;
+	width: 850px;
+	left:250px;
+	}
+#big{
+ 	position: relative;
+	height: 100px;
+}
+
+#01{
+	position: relative;
+	bottom:270px;
+	left: 340px;
+
+	}
+#second{
+position: relative;
+	height: 100px;
+	bottom:200px;
+
+}
+
+#top01{
+position: relative;
+	bottom:270px;	
+}
+#02{
+	position: relative;
+	bottom:10px;
+	left: 340px;
+
+	}
+.list_room_01{
+	position:relative;
+    left:300px;
+}
+#third{
+	position: relative;
+	height: 100px;
+	top:200px;
+
+	}
+	
+ul{
+	float: left;
+}
+
+.list_room{
+	position:relative;
+    left:300px;
+    bottom:250px;
+   
+
+}
+.list_room list_room_tj_top{
+ left:270px;
+
+}
+.01{
+position: absolute;
+top:270px;
+}
+#third{
+position: absolute;
+top:530px;
+right:150px;
+
+}
+#03{
+position: relative;
+	bottom:350px;
+	left: 440px;
+}
+
+.list_room01{
+	position:relative;
+    left:400px;
+    bottom:340px;
+
+}
+
+#low{
+	position: relative;
+	left:1px;
+
+	}
+	
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #2828FF; TEXT-DECORATION: underline
+}

@@ -1,0 +1,49 @@
+#max{
+	 position:relative;
+	 width:1350px;
+	top:59px;
+
+}
+.front{
+	 position:relative;
+	left:700px;
+}
+button{
+	 position:relative;
+	 top:5px;
+	 left:800px;
+
+	}
+
+#banner{
+	 position:relative;
+	 bottom:28px;
+	 left:1160px;
+	
+}
+a{
+	position:relative;
+	 top:10px;
+	 left:800px;
+
+}
+img{
+position:relative;
+	 top:10px;
+	 left:800px;
+
+}
+#mid{
+position:relative;
+bottom:10px;
+	 left:1020px;
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #2828FF; TEXT-DECORATION: underline
+}

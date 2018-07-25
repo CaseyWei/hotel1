@@ -1,0 +1,13 @@
+
+#dis{
+position: absolute;
+right:100px;
+top: 10px;
+width:100px;
+border: 1px red solid;
+}
+img{background:white;margin:0 5px;width:70px;height:70px;}
+img:hover{border:1px red solid;}
+.demo2 img{border:1px solid transparent;}
+.demo2 img:hover{border:1px red solid;}
+.demo3 img:hover{width:68px;height:68px;border:1px solid yellow;}
